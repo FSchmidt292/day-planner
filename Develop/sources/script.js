@@ -19,13 +19,14 @@ $(".saveBtn").on("click", function() {
 
 //loop through the hours on our HTML to assign the color coding for past, present, and future.
 
-for (i = 8; i < 17; i++) {
+for (i = 0; i < 23; i++) {
     if (i < nowInt) {
-        $(".hour"+JSON.stringify(i)).addClass("past")
+        $("#hour"+i).addClass("past");
     }else if (i > nowInt) {
-        $(".hour"+JSON.stringify(i)).addClass("future")
+        $("#hour"+i).addClass("future");
     }else{
-        $(nowHour).addClass("present")
+        console.log(nowHour);
+        $("#"+nowHour).addClass("present");
     }
 
 };
