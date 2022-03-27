@@ -10,12 +10,13 @@ console.log(nowHour);
 console.log(nowInt);
 
 $(".saveBtn").on("click", function() {
-    var text = $(this).siblings(".description").val();
+    var text = $(this).siblings(".task").val();
     var timeBlock = $(this).parent().attr("id");
     //save to localStorage
     localStorage.setItem(timeBlock, text)
 });
-//if ()
+
+$("#hour8 .task").localStorage.getItem("hour8");
 
 //loop through the hours on our HTML to assign the color coding for past, present, and future.
 
@@ -30,3 +31,4 @@ for (i = 0; i < 23; i++) {
     }
 
 };
+
