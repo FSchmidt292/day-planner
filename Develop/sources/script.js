@@ -16,7 +16,7 @@ $(".saveBtn").on("click", function() {
     localStorage.setItem(timeBlock, text)
 });
 
-$("#hour8 .task").localStorage.getItem("hour8");
+$("#hour8 .task").val(localStorage.getItem("hour8"));
 
 //loop through the hours on our HTML to assign the color coding for past, present, and future.
 
