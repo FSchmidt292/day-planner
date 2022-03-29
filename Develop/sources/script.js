@@ -6,8 +6,6 @@ $("#currentDay").text(moment().format("MMMM Do YYYY, h:mm A"));
 var now = moment();
 var nowInt = now.hour();
 var nowHour = "hour"+JSON.stringify(now.hour());
-console.log(nowHour);
-console.log(nowInt);
 
 $(".saveBtn").on("click", function() {
     var text = $(this).siblings(".task").val();
